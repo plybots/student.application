@@ -1,0 +1,99 @@
+﻿<Window x:Class="CRABSTUDENT.wpf.SponsorManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRABSTUDENT.wpf"
+        mc:Ignorable="d"
+        Title="Sponsor Manager" Height="693.575" Width="696.42">
+    <Grid Margin="0,0,-8,0">
+        <Label x:Name="label2_Copy12" Content="Contribution Summary" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF6A0202" FontSize="14" FontFamily="Yu Gothic UI Semilight" Margin="7,98,0,0" Width="237"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="9,124,0,0" VerticalAlignment="Top" Width="247" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="label2" Content="Tuition Discount:" HorizontalAlignment="Left" Margin="9,132,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorDiscount" HorizontalAlignment="Left" Margin="108,137,0,0" TextWrapping="Wrap" Text="{Binding Discount}" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight" Width="113" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy15" Content="Tuition:" HorizontalAlignment="Left" Margin="9,166,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorTuition" HorizontalAlignment="Left" Margin="91,172,0,0" TextWrapping="Wrap" Text="{Binding Tuition}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy16" Content="Boarding:" HorizontalAlignment="Left" Margin="9,188,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBoarding" HorizontalAlignment="Left" Margin="91,194,0,0" TextWrapping="Wrap" Text="{Binding Boarding}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy17" Content="Admission:" HorizontalAlignment="Left" Margin="9,210,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorAdmission" HorizontalAlignment="Left" Margin="91,216,0,0" TextWrapping="Wrap" Text="{Binding Admission}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy18" Content="Computer:" HorizontalAlignment="Left" Margin="9,232,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorComputer" HorizontalAlignment="Left" Margin="91,238,0,0" TextWrapping="Wrap" Text="{Binding Computer}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy19" Content="Development:" HorizontalAlignment="Left" Margin="9,253,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorDevelopment" HorizontalAlignment="Left" Margin="91,259,0,0" TextWrapping="Wrap" Text="{Binding Development_fee}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy21" Content="UCE:" HorizontalAlignment="Left" Margin="179,164,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorUCE" HorizontalAlignment="Left" Margin="220,169,0,0" TextWrapping="Wrap" Text="{Binding Uce}" VerticalAlignment="Top" Width="82" FontFamily="Yu Gothic UI Semilight" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy22" Content="UACE:" HorizontalAlignment="Left" Margin="179,186,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorUACE" HorizontalAlignment="Left" Margin="220,191,0,0" TextWrapping="Wrap" Text="{Binding Uace}" VerticalAlignment="Top" Width="82" FontFamily="Yu Gothic UI Semilight" BorderBrush="#FFF7F8F9"/>
+        <Label x:Name="label2_Copy23" Content="Mock:" HorizontalAlignment="Left" Margin="179,208,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorMock" HorizontalAlignment="Left" Margin="220,213,0,0" TextWrapping="Wrap" Text="{Binding Mock}" VerticalAlignment="Top" Width="82" FontFamily="Yu Gothic UI Semilight" BorderBrush="#FFF7F8F9"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="12,394,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.5,0.5"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="316,153,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5"/>
+
+        <Label x:Name="label2_Copy25" Content="Sciences:" HorizontalAlignment="Left" Margin="9,276,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorSciences" HorizontalAlignment="Left" Margin="91,282,0,0" TextWrapping="Wrap" Text="{Binding Sciences}" VerticalAlignment="Top" Width="88" FontFamily="Yu Gothic UI Semilight" Background="White" BorderBrush="#FFF7F8F9"/>
+
+        <Label x:Name="label2_Copy13" Content="Additional Fees " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF026A52" FontFamily="Yu Gothic UI Semilight" Margin="316,124,0,0"/>
+        <Label x:Name="label_Copy13" Content="Class 1 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,158,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass1AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding AdditionalClass1Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,158,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy14" Content="Class 2 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,185,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass2AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Text="{Binding AdditionalClass2Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,186,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy15" Content="Class 3 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,213,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass3AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding AdditionalClass3Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,213,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy16" Content="Class 4 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,157,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass4AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding AdditionalClass4Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,157,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="Sponsorlabel_Copy17" Content="Class 5 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,185,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass5AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding AdditionalClass5Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,185,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy18" Content="Class 6 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,213,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClass6AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding AdditionalClass6Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,213,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy3"  Content="Uniform" HorizontalAlignment="Left" Margin="9,369,0,0" VerticalAlignment="Top" Foreground="#FF026A52" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy12" Content="Class:" HorizontalAlignment="Left" Margin="12,404,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorClassUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Class_wear}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy13" Content="Budge:" HorizontalAlignment="Left" Margin="12,563,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorUniformBadge" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,562,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Badge}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy14" Content="T-Shirt:" HorizontalAlignment="Left" Margin="12,536,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorTShirtUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding School_t_shirt}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy15" Content="Jogging:" HorizontalAlignment="Left" Margin="12,510,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorJoggingUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Jogging}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy16" Content="Sweater:" HorizontalAlignment="Left" Margin="12,484,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorSweaterUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,483,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Sweater}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy17" Content="Casual:" HorizontalAlignment="Left" Margin="12,458,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorCasualUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,457,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Casual_wear}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy18" Content="Sports:" HorizontalAlignment="Left" Margin="12,431,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorSportsUniform" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="67,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Sports_wear}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy4"  Content="Others" HorizontalAlignment="Left" Margin="221,370,0,0" VerticalAlignment="Top" Foreground="#FF026A52" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy19" Content="Identity Card:" HorizontalAlignment="Left" Margin="222,405,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorIdentityCard" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,404,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Identity_card}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy21" Content="Medical:" HorizontalAlignment="Left" Margin="222,509,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorMedical" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Medical}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy22" Content="Library:" HorizontalAlignment="Left" Margin="222,483,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorLibrary" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Library}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy24" Content="Hair Cutting:" HorizontalAlignment="Left" Margin="222,459,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorHairCutting" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Hair_cutting}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy25" Content="Passport Photos:" HorizontalAlignment="Left" Margin="222,432,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorPassportPhotos" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Passport_photo}" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label1_Copy26" Content="Scouts:" HorizontalAlignment="Left" Margin="222,536,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorScouts" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="320,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="{Binding Scouts}" FontFamily="Yu Gothic UI Semilight"/>
+        <Button x:Name="SaveButton" Click="SaveButton_Click" Content="SAVE" HorizontalAlignment="Left" Margin="501,578,0,0" VerticalAlignment="Top" Width="103" Height="28" BorderBrush="{x:Null}" Foreground="#FF27920B"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="226,395,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="label2_Copy" Content="Sponsor Infomation" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="14" FontFamily="Yu Gothic UI Semilight" Margin="7,10,0,0" Width="519" Background="#FF2BD514"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="8,38,0,0" VerticalAlignment="Top" Width="247" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="label2_Copy1" Content="Name(s):" HorizontalAlignment="Left" Margin="9,55,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorName" CharacterCasing="Upper" HorizontalAlignment="Left" Margin="70,60,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight" Width="456" BorderBrush="#FFF7F8F9"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="316,273,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="label2_Copy2" Content="Boarding Additional Fees " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF026A52" FontFamily="Yu Gothic UI Semilight" Margin="316,244,0,0"/>
+        <Label x:Name="label_Copy" Content="Class 1 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,278,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass1AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding BAdditionalClass1Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,278,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy1" Content="Class 2 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,305,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass2AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Text="{Binding BAdditionalClass2Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,306,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy2" Content="Class 3 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,333,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass3AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding BAdditionalClass3Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="363,333,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy5" Content="Class 4 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,277,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass4AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding BAdditionalClass4Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,277,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="Sponsorlabel_Copy" Content="Class 5 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,305,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass5AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding BAdditionalClass5Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,305,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <Label x:Name="label_Copy6" Content="Class 6 :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,333,0,0" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox x:Name="SponsorBClass6AdditionalFees" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Text="{Binding BAdditionalClass6Fees}" VerticalAlignment="Top" Width="74" BorderBrush="#FFF7F8F9" Margin="493,333,0,0" FontFamily="Yu Gothic UI Semilight"/>
+
+    </Grid>
+</Window>

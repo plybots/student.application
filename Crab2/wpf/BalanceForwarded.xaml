@@ -1,0 +1,39 @@
+﻿<Window x:Class="CRABSTUDENT.wpf.BalanceForwarded"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRABSTUDENT.wpf"
+        mc:Ignorable="d"
+        Title="Balance Forwarded" Height="366.016" Width="431.198">
+    <Grid>
+        <Label x:Name="label_Copy"  Content="Balance Brought Forward" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Foreground="#FF6A0202" FontSize="18.667" FontFamily="Segoe UI Light"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="14,47,0,0" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="label_Copy1"  Content="Examination" HorizontalAlignment="Left" Margin="13,137,0,0" VerticalAlignment="Top" Foreground="#FF6276F9" FontSize="16" FontFamily="Segoe UI Light"/>
+        <Label x:Name="label1_Copy2" Content="Tuition:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFTuition" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="78,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy3" Content="Admission:" HorizontalAlignment="Left" Margin="201,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFAdmission" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="281,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy6" Content="UCE:" HorizontalAlignment="Left" Margin="14,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFUCE" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="53,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy7" Content="UACE:" HorizontalAlignment="Left" Margin="186,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFUACE" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="226,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy8" Content="Mock:" HorizontalAlignment="Left" Margin="13,208,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFMock" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="53,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy4" Content="Computer:" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFComputer" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="78,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy5" Content="Development:" HorizontalAlignment="Left" Margin="200,93,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BFDevelopment" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="281,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" BorderBrush="#FFEEECEC" Text="0"/>
+        <Button x:Name="button" Click="SaveButton_Click" Content="SAVE" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="93" Height="42" BorderBrush="{x:Null}" FontSize="16" Foreground="#FFC31B1B" Margin="320,283,0,0"/>
+
+    </Grid>
+</Window>

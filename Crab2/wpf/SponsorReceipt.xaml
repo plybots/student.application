@@ -1,0 +1,38 @@
+﻿<Window x:Class="CRABSTUDENT.wpf.SponsorReceipt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRABSTUDENT.wpf"
+        mc:Ignorable="d"
+        Title="Receipt" Height="220.215" Width="569.613">
+    <Grid Margin="0,1,0,-1">
+        <Label x:Name="label"  Content="Receipt Information" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Foreground="#FF6A0202" FontSize="18.667" FontFamily="Segoe UI Light"/>
+        <Rectangle Fill="#FFCECED3" HorizontalAlignment="Left" Height="1" Margin="14,35,0,0" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="label1" Content="Receipt No.:" HorizontalAlignment="Left" Margin="185,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ReceiptNo" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="263,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC"/>
+        <Label x:Name="label1_Copy" Content="Amount Paid:" HorizontalAlignment="Left" Margin="16,83,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ReceiptAmount" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Height="23" Margin="97,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEEECEC" Text="0"/>
+        <Label x:Name="label1_Copy1" Content="Date:" HorizontalAlignment="Left" Margin="403,42,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" SelectedDateFormat="Short"  Name="ReceiptDate" Margin="445,42,0,0" VerticalAlignment="Top" BorderBrush="#FFEEECEC"/>
+        <Button x:Name="SponsorReceiptSaveButton" Click="SponsorReceiptSaveButton_Click" Content="SAVE" HorizontalAlignment="Left" Margin="16,127,0,0" VerticalAlignment="Top" Width="93" Height="42" BorderBrush="{x:Null}" FontSize="16" Foreground="#FFC31B1B"/>
+        <ComboBox x:Name="ReceiptSponsor" ItemsSource="{Binding Sponsors}" HorizontalAlignment="Left" Margin="13,47,0,0" VerticalAlignment="Top" Width="153">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </Grid>
+</Window>
